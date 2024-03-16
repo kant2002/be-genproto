@@ -27,9 +27,9 @@ export default class TsCommandBuilder extends CommandBuilder {
                 execSync('./gradlew :extractProto', { stdio: 'pipe' })
                 break
             case Platform.ts:
-                typesProtoPath = './node_modules/@diia-inhouse/types/dist/proto/'
-                typesSubPaths = ['dist', 'proto', '@diia-inhouse', 'types']
-                dependenciesPattern = 'node_modules/@diia-inhouse/**/proto/**/*.proto'
+                typesProtoPath = './node_modules/@kant2002-diia-inhouse/types/dist/proto/'
+                typesSubPaths = ['dist', 'proto', '@kant2002-diia-inhouse', 'types']
+                dependenciesPattern = 'node_modules/@kant2002-diia-inhouse/**/proto/**/*.proto'
                 break
         }
 

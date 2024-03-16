@@ -1,7 +1,7 @@
 {
-    "name": "@diia-inhouse/genproto",
+    "name": "@kant2002-diia-inhouse/genproto",
     "version": "1.10.0",
-    "description": "JS codegen from proto with imports from @diia-inhouse/types",
+    "description": "JS codegen from proto with imports from @kant2002-diia-inhouse/types",
     "bin": {
         "genproto": "./dist/genproto.js"
     },
@@ -31,14 +31,15 @@
         "ts-proto"
     ],
     "devDependencies": {
-        "@diia-inhouse/configs": "^1.27.1",
-        "@diia-inhouse/eslint-config": "^3.5.0",
+        "@kant2002-diia-inhouse/configs": "^1.27.1",
+        "@kant2002-diia-inhouse/eslint-config": "^3.5.0",
         "@types/node": "20.9.0",
-        "madge": "6.1.0",
-        "lockfile-lint": "4.13.1"
+        "@types/yargs": "^17.0.32",
+        "lockfile-lint": "4.13.1",
+        "madge": "6.1.0"
     },
     "eslintConfig": {
-        "extends": "@diia-inhouse/eslint-config",
+        "extends": "@kant2002-diia-inhouse/eslint-config",
         "overrides": [
             {
                 "files": [
@@ -54,16 +55,19 @@
         ]
     },
     "release": {
-        "extends": "@diia-inhouse/configs/dist/semantic-release/package",
+        "extends": "@kant2002-diia-inhouse/configs/dist/semantic-release/package",
         "branches": [
             "main"
         ]
     },
     "commitlint": {
-        "extends": "@diia-inhouse/configs/dist/commitlint"
+        "extends": "@kant2002-diia-inhouse/configs/dist/commitlint"
     },
-    "prettier": "@diia-inhouse/eslint-config/prettier",
+    "prettier": "@kant2002-diia-inhouse/eslint-config/prettier",
     "madge": {
         "tsConfig": "./tsconfig.json"
-    }
+    },
+    "bundleDependencies": [
+        "ts-proto"
+    ]
 }

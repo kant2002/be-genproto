@@ -26,7 +26,7 @@ async function main(): Promise<void> {
         .option('v', { type: 'boolean', default: false })
         .option('platform', { type: 'string', default: Platform.ts })
         .option('generateClient', { type: 'boolean', default: false })
-        .option('rootDir', { type: 'string', default: 'node_modules/@diia-inhouse/**/proto/**/*.proto' })
+        .option('rootDir', { type: 'string', default: 'node_modules/@kant2002-diia-inhouse/**/proto/**/*.proto' })
         .option('outputDir', { type: 'string', default: 'src/interfaces' })
         .option('indexToDirs', {
             type: 'array',

@@ -52,7 +52,7 @@ export abstract class CommandBuilder {
             let packageName
             if (platform === Platform.java) {
                 // todo implement java resolution packages
-                packageName = '@diia-inhouse/types'
+                packageName = '@kant2002-diia-inhouse/types'
             } else {
                 packageName = `${splittedPath[idx + 1]}/${splittedPath[idx + 2]}`
             }
